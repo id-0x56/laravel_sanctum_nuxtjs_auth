@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    dd(
+        config('session.domain'),
+        config('sanctum.stateful'),
+    );
 });
